@@ -1,0 +1,116 @@
+.metric-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.metric-card.highlight {
+  background: linear-gradient(135deg, #4a9eff 0%, #6c5ce7 100%);
+  color: #fff;
+}
+
+.metric-label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-card.highlight .metric-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.metric-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.metric-card.highlight .metric-value {
+  color: #fff;
+}
+
+.metric-description {
+  font-size: 13px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.metric-card.highlight .metric-description {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.metric-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.metric-trend.positive {
+  color: #16a34a;
+  background: #f0fdf4;
+}
+
+.metric-trend.negative {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+.metric-trend.neutral {
+  color: #6b7280;
+  background: #f3f4f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .metric-card {
+    background: #1a1a1a;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .metric-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .metric-label {
+    color: #999;
+  }
+
+  .metric-value {
+    color: #fff;
+  }
+
+  .metric-description {
+    color: #666;
+  }
+
+  .metric-trend.positive {
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+  }
+
+  .metric-trend.negative {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+  }
+
+  .metric-trend.neutral {
+    color: #9ca3af;
+    background: rgba(156, 163, 175, 0.1);
+  }
+}

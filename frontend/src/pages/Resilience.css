@@ -1,0 +1,974 @@
+.resilience-page {
+  padding: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* =========================
+   1. PAGE HEADER
+   ========================= */
+.resilience-header {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  border-radius: 16px;
+  padding: 32px 36px;
+  color: #fff;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.resilience-header::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(74, 158, 255, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.resilience-header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.resilience-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.resilience-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+/* =========================
+   EXPLANATORY NOTE
+   ========================= */
+.explanatory-note {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #4a9eff;
+}
+
+.explanatory-note p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   2. RESILIENCE SCORE HERO
+   ========================= */
+.hero-card-section {
+  margin-bottom: 28px;
+}
+
+.resilience-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 16px;
+  padding: 36px 32px;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.resilience-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -15%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(74, 158, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.resilience-hero.high::before {
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+}
+
+.resilience-hero.low::before {
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.1) 0%, transparent 70%);
+}
+
+.hero-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-score {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-score-value {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -3px;
+  color: #fff;
+}
+
+.hero-score-max {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: -1px;
+}
+
+.hero-status {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.status-high {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+.status-medium {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+.status-low {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.hero-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-message {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.65;
+  margin: 0 0 8px 0;
+  max-width: 540px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-disclaimer {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   SECTION BLOCKS & HEADERS
+   ========================= */
+.section-block {
+  margin-bottom: 28px;
+}
+
+.block-title {
+  margin-bottom: 16px;
+}
+
+.block-h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 4px 0;
+}
+
+.block-sub {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+/* =========================
+   3. SCORE BREAKDOWN
+   ========================= */
+.factor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.factor-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+  border-top: 3px solid #ccc;
+}
+
+.factor-card.factor-high {
+  border-top-color: #16a34a;
+}
+
+.factor-card.factor-medium {
+  border-top-color: #d97706;
+}
+
+.factor-card.factor-low {
+  border-top-color: #dc2626;
+}
+
+.factor-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+.factor-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.factor-score-pill {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.factor-score-pill.status-high {
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+}
+
+.factor-score-pill.status-medium {
+  background: rgba(217, 119, 6, 0.1);
+  color: #d97706;
+}
+
+.factor-score-pill.status-low {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.factor-bar {
+  height: 6px;
+  background: #e5e5e5;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.factor-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.factor-fill-high {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+}
+
+.factor-fill-medium {
+  background: linear-gradient(90deg, #d97706, #f59e0b);
+}
+
+.factor-fill-low {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+.factor-explanation {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* =========================
+   4. EMERGENCY FUND COVERAGE
+   ========================= */
+.coverage-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.coverage-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.coverage-stat {
+  padding: 12px 0;
+}
+
+.coverage-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.coverage-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.coverage-stat.highlight-stat .coverage-label {
+  color: #4a9eff;
+}
+
+.coverage-value-large {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.coverage-unit {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 0;
+}
+
+.coverage-bar-wrap {
+  margin-top: 4px;
+}
+
+.coverage-bar-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.coverage-target-label {
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  background: rgba(74, 158, 255, 0.08);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.coverage-bar {
+  position: relative;
+  height: 20px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.coverage-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #4a9eff, #6c5ce7);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.coverage-bar-zone {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: rgba(34, 197, 94, 0.15);
+  border-left: 2px dashed rgba(34, 197, 94, 0.6);
+  border-right: 2px dashed rgba(34, 197, 94, 0.6);
+  pointer-events: none;
+}
+
+.coverage-bar-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* =========================
+   5. INCOME STABILITY
+   ========================= */
+.stability-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.stability-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stability-stat {
+  padding: 12px 0;
+}
+
+.stability-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stability-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.stability-value-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+.tag-low {
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+}
+
+.tag-moderate {
+  background: rgba(217, 119, 6, 0.1);
+  color: #d97706;
+}
+
+.tag-high {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+/* =========================
+   6. EXPENSE PRESSURE
+   ========================= */
+.expense-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.expense-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.expense-stat {
+  padding: 12px 0;
+}
+
+.expense-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expense-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.expense-value-coverage {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.coverage-stat-green .expense-value-coverage {
+  color: #16a34a;
+}
+
+.coverage-stat-amber .expense-value-coverage {
+  color: #d97706;
+}
+
+.coverage-stat-red .expense-value-coverage {
+  color: #dc2626;
+}
+
+.expense-explanation {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+}
+
+.expense-disclaimer {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+/* =========================
+   7. DEBT BURDEN
+   ========================= */
+.debt-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.debt-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.debt-stat {
+  padding: 12px 0;
+}
+
+.debt-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.debt-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.debt-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+.debt-explanation {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   8. SHOCK SURVIVAL PREVIEW
+   ========================= */
+.shock-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.shock-card.shock-warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.shock-card.shock-safe {
+  border-left: 4px solid #16a34a;
+}
+
+.shock-scenario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.shock-scenario-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.shock-scenario-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #dc2626;
+}
+
+.shock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.shock-stat {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.shock-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.shock-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.shock-stat.shock-negative .shock-value {
+  color: #dc2626;
+}
+
+.shock-stat.shock-positive .shock-value {
+  color: #16a34a;
+}
+
+.shock-footer {
+  margin-bottom: 16px;
+}
+
+.shock-message {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 0 6px 0;
+}
+
+.shock-disclaimer {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+.shock-cta {
+  text-align: center;
+}
+
+.shock-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #4a9eff, #6c5ce7);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.25);
+}
+
+.shock-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(74, 158, 255, 0.35);
+}
+
+/* =========================
+   9. RESILIENCE FACTORS SUMMARY
+   ========================= */
+.factor-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.factor-column {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.factor-column-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+}
+
+.helping-title {
+  color: #16a34a;
+}
+
+.reducing-title {
+  color: #d97706;
+}
+
+.factor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.factor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.helping-item {
+  color: #333;
+}
+
+.reducing-item {
+  color: #333;
+}
+
+.factor-bullet {
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.helping-bullet {
+  color: #16a34a;
+}
+
+.reducing-bullet {
+  color: #d97706;
+}
+
+/* =========================
+   10. ACTIONABLE NEXT STEP
+   ========================= */
+.action-section {
+  margin-bottom: 0;
+}
+
+.action-card {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.action-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.3px;
+}
+
+.action-sub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 20px 0;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #4a9eff, #6c5ce7);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(74, 158, 255, 0.35);
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(74, 158, 255, 0.45);
+}
+
+/* =========================
+   DARK MODE
+   ========================= */
+@media (prefers-color-scheme: dark) {
+  .resilience-page {
+    background: #121212;
+  }
+
+  .explanatory-note {
+    background: #1a1a1a;
+    border-left-color: #4a9eff;
+  }
+
+  .explanatory-note p {
+    color: #ccc;
+  }
+
+  .block-h2 {
+    color: #fff;
+  }
+
+  .block-sub {
+    color: #999;
+  }
+
+  .factor-card {
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+  }
+
+  .factor-name {
+    color: #fff;
+  }
+
+  .factor-bar {
+    background: #2a2a2a;
+  }
+
+  .factor-explanation {
+    color: #999;
+  }
+
+  .coverage-card,
+  .stability-card,
+  .expense-card,
+  .debt-card,
+  .shock-card {
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+  }
+
+  .coverage-label,
+  .stability-label,
+  .expense-label,
+  .debt-label {
+    color: #999;
+  }
+
+  .coverage-value,
+  .stability-value,
+  .expense-value {
+    color: #fff;
+  }
+
+  .shock-stat {
+    background: #252525;
+  }
+
+  .shock-label {
+    color: #999;
+  }
+
+  .shock-value {
+    color: #fff;
+  }
+
+  .factor-column {
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+  }
+
+  .factor-item {
+    color: #ccc;
+  }
+
+  .expense-explanation,
+  .debt-explanation,
+  .shock-message {
+    color: #ccc;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 640px) {
+  .resilience-page {
+    padding: 16px;
+  }
+
+  .resilience-header {
+    padding: 24px 20px;
+  }
+
+  .resilience-title {
+    font-size: 26px;
+  }
+
+  .hero-score-value {
+    font-size: 56px;
+  }
+
+  .factor-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .factor-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .coverage-value-large {
+    font-size: 28px;
+  }
+}

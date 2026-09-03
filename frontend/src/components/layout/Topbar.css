@@ -1,0 +1,124 @@
+.topbar {
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar-left h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.notification-badge {
+  position: relative;
+  padding: 8px;
+  cursor: pointer;
+  color: #666;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.notification-badge:hover {
+  color: #1a1a1a;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background: #ff4444;
+  border-radius: 50%;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.user-profile:hover {
+  background: #f5f5f5;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #4a9eff, #6c5ce7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .topbar {
+    background: #1a1a1a;
+    border-bottom-color: #2a2a2a;
+  }
+
+  .topbar-left h1 {
+    color: #fff;
+  }
+
+  .notification-badge {
+    color: #999;
+  }
+
+  .notification-badge:hover {
+    color: #fff;
+  }
+
+  .user-profile:hover {
+    background: #252525;
+  }
+
+  .user-name {
+    color: #fff;
+  }
+
+  .user-role {
+    color: #999;
+  }
+}

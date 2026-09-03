@@ -1,0 +1,62 @@
+.resilience-factor {
+  margin-bottom: 16px;
+}
+
+.factor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.factor-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.factor-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.factor-bar {
+  height: 8px;
+  background: #e5e5e5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.factor-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4a9eff, #6c5ce7);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.factor-fill.high {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+}
+
+.factor-fill.medium {
+  background: linear-gradient(90deg, #f59e0b, #f97316);
+}
+
+.factor-fill.low {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+@media (prefers-color-scheme: dark) {
+  .factor-name {
+    color: #fff;
+  }
+
+  .factor-value {
+    color: #999;
+  }
+
+  .factor-bar {
+    background: #2a2a2a;
+  }
+}
