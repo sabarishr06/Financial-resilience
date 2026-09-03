@@ -33,11 +33,12 @@ function Resilience() {
   const grossIncomes = history.map(h => h.grossIncome);
   const minMonth = Math.min(...grossIncomes);
   const maxMonth = Math.max(...grossIncomes);
-  const avgGross = Math.round(grossIncomes.reduce((a, b) => a + b, 0) / grossIncomes.length);
+  const avgGrossRaw = grossIncomes.reduce((a, b) => a + b, 0) / grossIncomes.length;
+  const avgGrossDisplay = Math.round(avgGrossRaw);
 
   // Income stability score variation range (display only)
   const incomeRange = maxMonth - minMonth;
-  const incomeRangePct = (incomeRange / avgGross) * 100;
+  const incomeRangePct = (incomeRange / avgGrossRaw) * 100;
   const variationLabel =
     incomeRangePct < 10 ? 'Low' : incomeRangePct < 25 ? 'Moderate' : 'High';
 
@@ -260,7 +261,7 @@ function Resilience() {
           <div className="stability-stats">
             <div className="stability-stat">
               <div className="stability-label">Average monthly gross income</div>
-              <div className="stability-value">₹{avgGross.toLocaleString()}</div>
+              <div className="stability-value">₹{avgGrossDisplay.toLocaleString()}</div>
             </div>
             <div className="stability-stat">
               <div className="stability-label">Income variation</div>
