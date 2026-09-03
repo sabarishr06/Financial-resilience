@@ -1,0 +1,9 @@
+date,type,category,amount,description
+2023-10-01,income,delivery,45.50,UberEats delivery
+2023-10-01,expense,fuel,15.00,Gas station
+2023-10-02,income,ride,30.00,Lyft ride
+2023-10-02,expense,food,12.50,Lunch on shift
+2023-10-03,income,delivery,55.00,DoorDash deliveries
+2023-10-04,expense,maintenance,40.00,Oil change
+2023-10-05,income,ride,60.00,Uber rides
+2023-10-05,expense,phone,35.00,Monthly data plan
